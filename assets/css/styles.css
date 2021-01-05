@@ -138,12 +138,14 @@ header nav li {
 }
 
 .hero .background-image {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	z-index: -1;
 	background-color: #80a3db;
 }
@@ -194,6 +196,10 @@ header nav li {
 }
 
 /*Destinations Section*/
+.destinations {
+	background-color: #fff;
+	background-size: cover;
+}
 
 .destinations .grid li {
 	height: 350px;
@@ -250,6 +256,11 @@ header nav li {
 }
 
 /*Testimonials Section*/
+
+.testimonials {
+	background-color: #fff;
+	background-size: cover;
+}
 
 .testimonials .quote {
 	font-size: 22px;
