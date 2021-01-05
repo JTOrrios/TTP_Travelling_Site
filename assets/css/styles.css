@@ -85,12 +85,13 @@ section p {
 /*Header Styles*/
 
 header {
+	background-color: #3f51b5;
 	position: absolute;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 35px 100px 0;
+	padding: 10px 100px 0;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
 	color: #fff;
