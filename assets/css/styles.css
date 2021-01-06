@@ -123,6 +123,7 @@ header nav {
 
 header nav li {
     margin: 0 15px;
+	margin: 0 15px;
 }
 
 @media (max-width: 800px) {
