@@ -373,6 +373,9 @@ footer p {
     cursor: pointer;
 }
 
+
+/*made the background dark blue*/
+
 #btnScrollToTop:active {
     background: #3144b3;
 }
