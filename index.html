@@ -3,16 +3,83 @@
 
 <head>
     <meta charset="utf-8">
+    <!--<title>Scroll-to-section-smooth-scrolling</title>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cache Travel</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--Refrence to material Icon(up-arrow)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--<style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Open Sans, sans-serif;
+        }
+        
+        .menu {
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fff;
+            width: 100%;
+        }
+        
+        .menu a {
+            font-size: 18px;
+            padding: 15px 0;
+            color: #333;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        section {
+            display: inlne-block;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>-->
+
 </head>
 
 <body>
-  
+
+    <!--<nav class="Menu">
+        <a href="#Destinations">Destinations</a>
+        <a href="#Tours">Tours</a>
+        <a href="#Reviews">Reviews</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="Destinations" class="section">
+            <h1>Destinations</h1>
+        </section>
+        <section id="Tours" class="section">
+            <h1>Tours</h1>
+        </section>
+        <section id="Reviews" class="section">
+            <h1>Reviews</h1>
+        </section>
+        <section id="Contact" class="section">
+            <h1>Contract</h1>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"></script>
+
+    $(function(){ $(".menu a").on('click',function(){ $("html, body").animate({ scrollTop: $($.attr(this,'href')).offset().top }, 500); }); });-->
+
     <header>
         <h2><a href="#">Cache Travel</a></h2>
         <nav>
@@ -100,7 +167,7 @@
         <hr>
         <form>
             <input type="email" placeholder="Email">
-            <a href="#" class="btn">Subscribe now</a>
+            <a href="#" class="btn">Let's Begin!</a>
         </form>
     </section>
 
@@ -113,7 +180,28 @@
             <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
         </ul>
     </footer>
-  
+    <!--Jimmy(made up-arrow visible on website)-->
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+        btnScrollToTop.addEventListener("click", function() {
+            //window.scrollTo(0, 0);
+
+            window.scrollTo({ //Smooth animation for up-arrow
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+
+        });
+    </script>
+
 </body>
+
+
 
 </html>
