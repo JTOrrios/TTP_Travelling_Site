@@ -239,6 +239,10 @@ header nav li {
 	text-align: center;
 }
 
+.packages .grid li p {
+	margin: auto;
+}
+
 .packages .grid li i {
 	color: #8c9eff;
 }
